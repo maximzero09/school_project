@@ -12,5 +12,8 @@ public Customer(int ID, string Name, string Email)
     this.Name = Name;
     this.Email = Email;
 }
-
+public void AddCustomer(int ID, string Name, string Email)
+{
+    Customer customer = new Customer(this.ID, this.Name, this.Email);
+}
 }

@@ -1,10 +1,19 @@
 public class Order
 {
-    private int ID;
-    private string CustomerName;
-    private string ProductName;
-    private int Quantity;
-    private int TotalPrice;
+int ID;
+string CustomerName;
+string ProductName;
+int Quantity;
+int TotalPrice;
 
     
+public Order(int ID, string CustomerName, string ProductName, int Quantity, int TotalPrice)
+{
+    this.ID = ID;
+    this.Quantity = Quantity;
+    this.TotalPrice = TotalPrice;
+    this.CustomerName = CustomerName;
+    this.ProductName = ProductName;
+
+}
 }
