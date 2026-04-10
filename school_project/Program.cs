@@ -23,13 +23,15 @@ namespace MyApp
                     case 1:
                         Console.WriteLine("Please enter product name:");
                         string pn = Console.ReadLine();
+			Console.WriteLine("Please enter price");
+			int price = int.Parse(Console.ReadLine());
+			Console.WriteLine("Please enter quantity");
+			int quantity = int.Parse(Console.ReadLine());
 			 int id = Random.Shared.Next(1000, 9999); // random product ID
-
-		        Console.WriteLine($"Product '{pn}' assigned ID: {id}");
+			Product product = new Product(id, pn, price,quantity  );
+    		        Console.WriteLine($"Product '{pn}' assigned ID: {id}");
 			    break;
 
-			Console.WriteLine("Please enter ");
-                        break;
 
                     case 0:
                         Console.WriteLine("Exiting program...");
