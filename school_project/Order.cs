@@ -1,19 +1,15 @@
-public class Order
+class Order
 {
-int ID;
-string CustomerName;
-string ProductName;
-int Quantity;
-int TotalPrice;
+    public int Id { get; set; }
+    public string ClientName { get; set; }
+    public List<Product> Products { get; set; }
+    public int TotalPrice { get; set; }
 
-    
-public Order(int ID, string CustomerName, string ProductName, int Quantity, int TotalPrice)
-{
-    this.ID = ID;
-    this.Quantity = Quantity;
-    this.TotalPrice = TotalPrice;
-    this.CustomerName = CustomerName;
-    this.ProductName = ProductName;
-
-}
+    public Order(int id, string clientName, List<Product> products)
+    {
+        Id = id;
+        ClientName = clientName;
+        Products = products;
+        TotalPrice = products.Sum(p => p.Price * p.Quantity);
+    }
 }
