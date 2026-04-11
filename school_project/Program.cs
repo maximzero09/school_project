@@ -16,9 +16,8 @@ namespace MyApp
 		Console.WriteLine("\nPlease select option:");
 		Console.WriteLine("1 - Add product");
 		Console.WriteLine("2 - view products");
-		Console.WriteLine("3 - create new orders");
+		Console.WriteLine("3 - create new order");
 		Console.WriteLine("4 - Add customers");
-		Console.WriteLine("5 - Create order");
 		Console.WriteLine("0 - Exit");
 		input = int.Parse(Console.ReadLine());
 
