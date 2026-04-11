@@ -19,6 +19,7 @@ namespace MyApp
 		Console.WriteLine("3 - create new order");
 		Console.WriteLine("4 - Add customers");
 		Console.WriteLine("0 - Exit");
+		Console.WriteLine("5 - look up product by name");
 		input = int.Parse(Console.ReadLine());
 
 		switch (input)
@@ -113,7 +114,18 @@ namespace MyApp
 			int cid = Random.Shared.Next(1000, 9999); 
 			Customer customer = new Customer(cid, name, email);
 			break;	
-
+		    case 5:
+			Console.WriteLine("Please enter product name");
+			string cinput = Console.ReadLine();
+			var pfound = Store.products.FirstOrDefault(p => p.Name.Equals(cinput, StringComparison.OrdinalIgnoreCase));				if (pfound == null)	
+			{
+			    Console.WriteLine("Product not found");
+			}
+			else
+			{
+			    Console.WriteLine($"Product: \n {pfound.Name} \n Price:{pfound.Price} \n ID: {pfound.ID} \n  ");
+			}
+			break;
 		    default:
 			Console.WriteLine("Invalid option");
 			break;
