@@ -1,10 +1,10 @@
 public class Product
 {
-private int ID {get;set;}
-private string Name {get;set;}
+public int ID {get;set;}
+public string Name {get;set;}
 
-private int Price;
-private int Quantity;
+public int Price {get; set;}
+public int Quantity {get; set;}
 
 
 public Product(int ID, string Name, int Price, int Quantity)
@@ -16,7 +16,6 @@ public Product(int ID, string Name, int Price, int Quantity)
     this.Quantity = Quantity;
 }
 }
-
 
 
 
