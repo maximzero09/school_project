@@ -24,11 +24,11 @@ namespace school_project
                 Console.WriteLine("2 - view products");
                 Console.WriteLine("3 - create new order");
                 Console.WriteLine("4 - Add customers");
-                Console.WriteLine("0 - Exit");
                 Console.WriteLine("5 - look up product by name");
                 Console.WriteLine("6 - view all clients");
                 Console.WriteLine("7 - view total revenue");
                 Console.WriteLine("8 - view order history");
+                Console.WriteLine("0 - Exit");
 
                 string rawInput = Console.ReadLine();
                 if (!int.TryParse(rawInput, out input)) continue;
