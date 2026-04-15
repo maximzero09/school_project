@@ -1,0 +1,33 @@
+# Build folders
+bin/
+obj/
+
+# Debug / Release
+Debug/
+Release/
+
+# Rider / VS / VSCode junk
+.vs/
+.idea/
+.vscode/
+
+# User files
+*.user
+*.suo
+*.userprefs
+
+# NuGet
+packages/
+*.nupkg
+.nuget/
+
+# .NET cache
+*.cache
+*.dll
+*.exe
+*.pdb
+
+# OS garbage
+.DS_Store
+Thumbs.db
+
