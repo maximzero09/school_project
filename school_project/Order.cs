@@ -19,7 +19,7 @@ namespace school_project
             ID = id;
             CustomerName = customerName;
             Products = products;
-            TotalPrice = products.Sum(p => (double)p.Price);
+            TotalPrice = products.Sum(p => (double)p.Price * p.Quantity);
         }
     }
 }

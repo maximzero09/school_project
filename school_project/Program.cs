@@ -87,10 +87,14 @@ namespace school_project
                                 Console.WriteLine("Invalid ID.");
                                 continue;
                             }
-
+                            
+                            
                             if (pid == 0) break;
+                            Console.WriteLine("Please enter quantity");
+                            int quantityToAdd = int.Parse(Console.ReadLine());
 
                             Product found = Store.products.FirstOrDefault(p => p.ID == pid);
+                            found.Quantity =  quantityToAdd;
 
                             if (found == null)
                             {
